@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(
+      to right bottom,
+      hsla(111, 55%, 64%, 0.808),
+      hsla(160, 64%, 43%, 0.815)
+    ),
+    url("education2-getty-images.jpg");
+  background-size: cover;
+  background-position: top;
+  /* display: flex;
+    align-items: center;
+    justify-content: center; */
+  height: 100vh;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.btn-container button {
+  /* text-align: center; */
+  width: 5rem;
+  padding: 0.7rem 0.7rem;
+  font-size: 1rem;
+  border-radius: 1rem;
+  background-color: chartreuse;
+  border: 1px solid chartreuse;
+  cursor: pointer;
+}

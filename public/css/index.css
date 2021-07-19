@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(
+      to right bottom,
+      hsla(111, 55%, 64%, 0.808),
+      hsla(160, 64%, 43%, 0.815)
+    ),
+    url("education2-getty-images.jpg");
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.container a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  background-color: black;
+  padding: 1rem;
+  border-radius: 2.5rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  /* border: 2px solid red; */
+  width: 50%;
+}
+@media (max-width: 1222px) {
+  .container {
+    flex-direction: column;
+  }
+  .container a {
+    text-align: center;
+    margin: 1rem 1rem;
+  }
+}
+@media (max-width: 580px) {
+  .container a {
+    font-size: 1rem;
+  }
+}

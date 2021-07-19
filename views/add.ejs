@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/add.css" />
+    <title>Add/Drop</title>
+  </head>
+  <body>
+    <form action="/add" method="POST" class="form">
+      <h1>Add Student:</h1>
+      <label for="name">Enter Name:</label>
+      <input type="text" id="name" name="fName" />
+      <div class="btn-container">
+        <button type="submit">Add</button>
+      </div>
+    </form>
+    <form action="/drop" method="POST" class="form">
+      <h1>Drop Student:</h1>
+      <label for="rollno">Enter Roll no:</label>
+      <input type="text" id="rollno" name="rollno" />
+      <div class="btn-container">
+        <button type="submit">Drop</button>
+      </div>
+    </form>
+    <% if(validation===true){ %>
+    <div class="modal">
+      <p>The student with this roll number doesn't exists!</p>
+      <a href="/adddrop">OK</a>
+    </div>
+    <% } %>
+  </body>
+</html>

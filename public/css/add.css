@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(
+      to right bottom,
+      hsla(111, 55%, 64%, 0.808),
+      hsla(160, 64%, 43%, 0.815)
+    ),
+    url("education2-getty-images.jpg");
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.btn-container button {
+  /* text-align: center; */
+  width: 10rem;
+  padding: 0.7rem 0.7rem;
+  font-size: 1rem;
+  border-radius: 1rem;
+  background-color: chartreuse;
+  border: 1px solid chartreuse;
+  cursor: pointer;
+}
+.form {
+  /* border: 2px solid red; */
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2rem;
+}
+label,
+input {
+  display: block;
+  margin: 0.7rem 0.7rem;
+}
+input {
+  width: 75%;
+  padding: 0.7rem 0.7rem;
+}
+.modal {
+  position: absolute;
+  background-color: seagreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem;
+  font-size: 2rem;
+  border-radius: 2rem;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.modal * {
+  margin: 1rem 1rem;
+}
+.modal a {
+  text-decoration: none;
+  width: 10rem;
+  padding: 0.7rem 0.7rem;
+  font-size: 1rem;
+  border-radius: 1rem;
+  background-color: chartreuse;
+  border: 1px solid chartreuse;
+  cursor: pointer;
+  text-align: center;
+  color: black;
+}
+@media (max-width: 870px) {
+  body {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .modal {
+    width: 90%;
+  }
+}
+@media (max-height: 500px) {
+  html {
+    font-size: 0.5rem;
+  }
+}

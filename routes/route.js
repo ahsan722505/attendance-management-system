@@ -1,0 +1,10 @@
+const express = require("express");
+const controllers = require("../controllers/controller");
+const router = express.Router();
+router.get("/", controllers.getIndex);
+router.get("/attendence", controllers.markAttendence);
+router.post("/markAtt", controllers.submit);
+router.get("/adddrop", controllers.add);
+router.post("/add", controllers.addSubmit);
+router.post("/drop", controllers.dropSubmit);
+module.exports = router;
