@@ -89,6 +89,13 @@ input {
   .modal {
     width: 90%;
   }
+  .form {
+    font-size: 1rem;
+    /* margin-top: 1rem; */
+  }
+  .form1 {
+    margin-top: 1.7rem;
+  }
 }
 @media (max-height: 500px) {
   html {
